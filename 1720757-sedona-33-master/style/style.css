@@ -1,0 +1,577 @@
+@font-face {
+	font-family: "PT Sans";
+	font-style: normal;
+	font-weight: 400;
+	src: url("fonts/pt-sans-regular.woff2") format("woff2");
+	font-display: swap;
+}
+@font-face {
+	font-family: "PT Sans";
+	font-style: normal;
+	font-weight: 400;
+	src: url("fonts/pt-sans-regular.woff2") format("woff2");
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "PT Sans";
+	font-style: normal;
+	font-weight: 700;
+	src: url("fonts/pt-sans-bold.woff2") format("woff2");
+	font-display: swap;
+}
+
+body {
+	font-family: "PT Sans", sans-serif;
+	font-size: 16px;	
+	background-color:  #F2F2F2;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin:0;
+
+}
+
+li {
+    list-style-type: none; 
+}
+
+ul {
+    margin-left: 0; 
+    padding-left: 0;
+}
+
+.page {
+	margin: 0 auto;
+	height: auto;
+    width: 1200px;
+	background-color: #FFFFFF;
+}
+/* Header */
+
+.navigation-link {
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 26px;
+	text-align: center;
+	color: #000000;
+	text-decoration: none;
+}
+
+.header-btn-link {
+	font-weight: bold;
+	font-style: normal;
+	text-transform: uppercase;
+	font-size: 16px;
+	line-height: 20px;
+	text-align: center;
+	color: #FFFFFF;
+	background-color: #756257;
+	text-decoration: none;
+	padding: 10px 36px;
+	border-radius: 4px;
+	transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.header-btn-link:hover {
+	background-color: #584940;
+}
+
+/* Main */
+
+.background {
+    background-image: url("../img/background/top-background.jpg");
+    height: 485px;
+    width: 1200px;
+}
+.background-divider {
+	padding-top: 19px;
+}
+.sedona {
+	padding: 51px 371px 0px;
+}
+
+.header-text-block {
+	height: 282px;
+	width: 1200px;
+	background-color: #FFFFFF;
+}
+.title {
+	font-family: PT Sans, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 36px;
+	text-align: center;
+	text-transform: uppercase;
+	text-align: center;
+	color: #000000;
+	height: 72px;
+	width: 720px;
+	padding: 63px 240px 0px;
+}
+
+.subtitle {
+	font-family: PT Sans, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 22px;
+	line-height: 36px;
+	color: #333333;
+	height: 36px;
+	width: 720px;
+	padding: 31px 240px 0px 240px;
+}
+.services-title {
+	font-family: PT Sans, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 28px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	height: 56px;
+	width: 400px;
+	padding-top: 97px;
+}
+
+.float-left {
+	height: 384px;
+	width: 400px;
+	background-color: #83B3D3;
+}
+
+.float-left p:first-of-type {
+	font-family: PT Sans, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+	text-align: center;
+	text-align: center;
+	color: #ffffff;
+	margin: 0;
+	padding-top: 28px;
+}
+
+.float-left p:last-child{
+	font-family: PT Sans, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+	text-align: center;
+	color: #ffffff;
+	height: 63px;
+	width: 220px;
+	padding: 32px 90px 87px;
+	margin: 0;
+	
+}
+
+.background-section {
+    background-image: url("../img/background/background-bottom.jpg");
+    height: 411px;
+    width: 1200px;
+}
+
+.messenger-icon {
+    height: 16px;
+    width: 20px;
+}
+
+h3.services-title {
+	font-family: PT Sans, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 28px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.services-group-block1 p {
+	font-family: PT Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+	text-align: center;
+	color: #333333;	
+	height: 73px;
+	width: 250px;
+}
+.services-group-block2 p {
+	font-family: PT Sans,sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+	text-align: center;
+	color: #333333;	
+}
+
+.services-group-block2 p:first-of-type {
+	font-family: PT Sans, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+	text-align: center;
+	text-align: center;
+	color: #333333;
+	margin: 0;
+	padding-top: 28px;
+}
+
+.float-right {
+	height: 384px;
+	width: 400px;
+	background-color: #83B3D3;
+}
+
+.float-right p:first-of-type {
+	font-family: PT Sans, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+	text-align: center;
+	text-align: center;
+	color: #ffffff;
+	margin: 0;
+	padding-top: 28px;
+}
+
+.float-right p:last-child {
+	font-family: PT Sans, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.bottom-subtitle {
+	font-family: PT Sans, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 22px;
+	line-height: 26px;
+	text-align: center;
+	color: #333333;
+}
+
+.btn-link {
+	font-family: PT Sans,sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 36px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	padding: 14px 150px;
+	background-color: #756257;
+	border-radius: 10px;
+	transition: all 0.3s ease 0s;
+    cursor: pointer;
+	text-decoration: none;
+}
+
+.btn-link:hover {
+	background-color: #584940;
+}
+
+.section-title {
+	font-family: PT,sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 36px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+.section-subtitle {
+	font-family: PT,sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 22px;
+	line-height: 26px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.form button {
+	font-family: PT Sans, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 26px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	background-color: #83B3D3;
+}
+
+/* Footer */
+
+.phone {	
+	font-family: PT Sans, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 40px;
+	line-height: 40px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #000000;
+	text-decoration: none;
+}
+
+/* Catalog */
+
+.page-catalog {
+	margin: 0 auto;
+	height: auto;
+    width: 1200px;
+	background-color: #ffffff;
+}
+
+.background-section {
+	background-image: url("../img/img-catalog/background/catalog-background1.jpg");
+	height: 408px;
+	width: 1200px;
+}
+.title-catalog {
+	font-family: PT Sans,sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 60px;
+	line-height: 78px;
+	color: #FFFFFF;
+}
+
+.hapter {
+	font-family: PT Sans,sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 21px;
+	color: #FFFFFF;
+}
+
+.catalog-filter-title {
+	font-family: PT Sans,sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 26px;
+	color: #20093a;
+}
+
+.checkbox-title {
+	font-family: PT Sans,sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 26px;
+	color: #8217fd;
+}
+
+.control {
+	font-family: PT Sans,sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 26px;
+	color: #8217fd;
+}
+
+.button-apply {
+	font-family: PT Sans,sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 21px;
+	color: #FFFFFF;
+	background-color: #83B3D3;
+	padding: 19px 36px;
+}
+
+.button-reset {
+	font-family: PT Sans,sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 23px;
+	text-align: center;
+	color: rgb(236, 16, 16);
+}
+
+b {
+	font-family: PT Sans, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 39px;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.question {
+	font-family: PT Sans, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 23px;
+	color: #333333;
+}
+
+.link-hotel {
+	font-family: PT Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 31px;
+	color: #000000;
+	text-decoration: none;
+}
+
+.button-left {
+	font-family: PT Sans, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 21px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #e22222;
+	text-decoration: none;
+}
+
+.button-right {
+	font-family: PT Sans, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 21px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #4807e0;
+	text-decoration: none;
+}
+
+.button-right-green {
+	font-family: PT Sans, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 21px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #7DB54F;
+	text-decoration: none;
+}
+
+.hotel-price {
+	font-family: PT Sans,sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 23px;
+	color: #333333;
+}
+
+.rating {
+	font-family: PT Sans,sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 21px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #333333;
+}
+
+.load-more {
+	font-family: PT Sans,sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 26px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #bd6464;
+	text-decoration: none;
+}
+
+.pagination-items {
+	font-family: PT Sans;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 26px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.pagination-items1 {
+	font-family: PT Sans,sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 26px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #000000;
+	text-decoration: none;
+}
+
+.pagination-items {
+	font-family: PT Sans,sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 26px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #000000;
+	text-decoration: none;
+}
+
+.number {
+	font-family: PT Sans,sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 23px;
+	color: #333333;
+}
+
+.section-title {
+	font-family: PT Sans,sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 36px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.section-subtitle {
+	font-family: PT Sans,sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 22px;
+	line-height: 26px;
+	text-align: center;
+	color: #333333;
+}
