@@ -25,6 +25,7 @@ body {
 	font-family: "PT Sans", sans-serif;
 	font-size: 16px;	
 	background-color:  #F2F2F2;
+	margin: 0;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -47,6 +48,7 @@ ul {
     width: 1200px;
 	background-color: #FFFFFF;
 }
+
 /* Header */
 
 .navigation-link {
@@ -86,8 +88,26 @@ ul {
     width: 1200px;
 }
 .background-divider {
-	padding-top: 19px;
+	padding-top: 19px; 
 }
+
+.blue-background {
+	background: rgba(131, 179, 211, 0.12);
+	min-height: 384px;
+	width: 400px;
+}
+
+.blue-background-central-block{
+	background: rgba(131, 179, 211, 0.2);
+	max-height: 384px;
+	width: 400px;
+}
+
+.background-central-block {
+	height: 384px;
+	width: 400px;
+}
+
 .sedona {
 	padding: 51px 371px 0px;
 }
@@ -137,13 +157,13 @@ ul {
 	padding-top: 97px;
 }
 
-.float-left {
-	height: 384px;
+.advantage {
+	min-height: 384px;
 	width: 400px;
 	background-color: #83B3D3;
 }
 
-.float-left p:first-of-type {
+.advantage p:first-of-type {
 	font-family: PT Sans, sans-serif;
 	font-style: normal;
 	font-weight: normal;
@@ -156,7 +176,7 @@ ul {
 	padding-top: 28px;
 }
 
-.float-left p:last-child{
+.advantage p:last-child {
 	font-family: PT Sans, sans-serif;
 	font-style: normal;
 	font-weight: normal;
@@ -171,7 +191,7 @@ ul {
 	
 }
 
-.background-section {
+.background-bottom {
     background-image: url("../img/background/background-bottom.jpg");
     height: 411px;
     width: 1200px;
@@ -225,35 +245,6 @@ h3.services-title {
 	color: #333333;
 	margin: 0;
 	padding-top: 28px;
-}
-
-.float-right {
-	height: 384px;
-	width: 400px;
-	background-color: #83B3D3;
-}
-
-.float-right p:first-of-type {
-	font-family: PT Sans, sans-serif;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 18px;
-	line-height: 21px;
-	text-align: center;
-	text-align: center;
-	color: #ffffff;
-	margin: 0;
-	padding-top: 28px;
-}
-
-.float-right p:last-child {
-	font-family: PT Sans, sans-serif;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 18px;
-	line-height: 21px;
-	text-align: center;
-	color: #FFFFFF;
 }
 
 .bottom-subtitle {
@@ -340,7 +331,7 @@ h3.services-title {
 	margin: 0 auto;
 	height: auto;
     width: 1200px;
-	background-color: #ffffff;
+	background-color: #eeee6f;
 }
 
 .background-section {
@@ -372,7 +363,7 @@ h3.services-title {
 	font-weight: bold;
 	font-size: 20px;
 	line-height: 26px;
-	color: #20093a;
+	color: #FFFFFF;
 }
 
 .checkbox-title {
@@ -381,7 +372,7 @@ h3.services-title {
 	font-weight: bold;
 	font-size: 20px;
 	line-height: 26px;
-	color: #8217fd;
+	color: #FFFFFF;
 }
 
 .control {
@@ -390,7 +381,7 @@ h3.services-title {
 	font-weight: bold;
 	font-size: 20px;
 	line-height: 26px;
-	color: #8217fd;
+	color: #FFFFFF;
 }
 
 .button-apply {
@@ -411,17 +402,7 @@ h3.services-title {
 	font-size: 18px;
 	line-height: 23px;
 	text-align: center;
-	color: rgb(236, 16, 16);
-}
-
-b {
-	font-family: PT Sans, sans-serif;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 30px;
-	line-height: 39px;
-	text-transform: uppercase;
-	color: #000000;
+	color: #ffffff;
 }
 
 .question {
@@ -451,8 +432,17 @@ b {
 	line-height: 21px;
 	text-align: center;
 	text-transform: uppercase;
-	color: #e22222;
+	color: #ffffff;
 	text-decoration: none;
+	background-color: #756257;
+	padding: 9px 20px;
+	border-radius: 4px;
+}
+
+.button-left:hover {
+	background-color: #584940;
+	color: #dacfcf;
+	transition: all 0.3s ease 0s;
 }
 
 .button-right {
@@ -463,8 +453,17 @@ b {
 	line-height: 21px;
 	text-align: center;
 	text-transform: uppercase;
-	color: #4807e0;
+	color: #ffffff;
 	text-decoration: none;
+	background-color: #83B3D3;
+	padding: 9px 20px;
+	border-radius: 4px;
+}
+
+.button-right:hover {
+	background-color: #38749c;
+	color: #dacfcf;
+	transition: all 0.3s ease 0s;
 }
 
 .button-right-green {
@@ -475,9 +474,19 @@ b {
 	line-height: 21px;
 	text-align: center;
 	text-transform: uppercase;
-	color: #7DB54F;
+	color: #FFFFFF;
 	text-decoration: none;
+	background-color: #7DB54F;
+	padding: 9px 20px;
+	border-radius: 4px;
 }
+
+.button-right-green:hover {
+	background-color: #4b7a24;
+	color: #dacfcf;
+	transition: all 0.3s ease 0s;
+}
+
 
 .hotel-price {
 	font-family: PT Sans,sans-serif;
@@ -507,8 +516,17 @@ b {
 	line-height: 26px;
 	text-align: center;
 	text-transform: uppercase;
-	color: #bd6464;
+	color: #ffffff;
 	text-decoration: none;
+	padding: 14px 238px;
+	background-color: #83B3D3;
+	border-radius: 4px;
+}
+
+.load-more:hover {
+	background-color: #38749c;
+	color: #dacfcf;
+	transition: all 0.3s ease 0s;
 }
 
 .pagination-items {
@@ -532,6 +550,9 @@ b {
 	text-transform: uppercase;
 	color: #000000;
 	text-decoration: none;
+	padding: 14px 22px;
+	background-color: #F2F2F2;
+	border-radius: 4px;
 }
 
 .pagination-items {
@@ -544,6 +565,15 @@ b {
 	text-transform: uppercase;
 	color: #000000;
 	text-decoration: none;
+	padding: 14px 22px;
+	background-color: #83B3D3;
+	border-radius: 4px;
+}
+
+.pagination-items:hover {
+	background-color: #38749c;
+	color: #dacfcf;
+	transition: all 0.3s ease 0s;
 }
 
 .number {
