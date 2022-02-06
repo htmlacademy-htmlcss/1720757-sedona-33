@@ -1,0 +1,25 @@
+.page {
+    align-items: center;
+    margin: 0 auto;
+
+    height: 3315px;
+    width: 1280px;
+}
+
+.background {
+    background-image: url("../img/bg/index-background.jpg");
+    height: 485px;
+    width: 1200px;
+}
+
+.background-section {
+    background-image: url("../img/bg/background.jpg");
+    height: 411px;
+    width: 1200px;
+}
+
+.messenger-icon {
+    height: 16px;
+    width: 20px;
+}
+
