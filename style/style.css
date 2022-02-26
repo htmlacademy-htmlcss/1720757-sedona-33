@@ -381,9 +381,14 @@ h3.services-title {
 	padding: 94px 240px 0px;
 }
 
-
 .form-email {
-	margin-left: 222px;
+	padding-left: 222px;
+	display: grid;
+	grid-template-columns: 600px 200px;
+}
+
+.form-email button{
+	border-radius: 0px 10px 10px 0px;
 }
 
 .section-subtitle {
@@ -414,7 +419,6 @@ h3.services-title {
 
 .field {
 	height: 60px;
-	width: 600px;
 	border-radius: 10px;
 	border: 0px;
 }
@@ -430,7 +434,6 @@ h3.services-title {
 	color: #FFFFFF;
 	background-color: #83B3D3;
 	border: 0px;
-	border-radius: 10px;
 }
 
 .form button:hover {
@@ -449,7 +452,7 @@ h3.services-title {
 .messenger {
 	box-sizing: border-box;
 	height: 120px;
-	width: 240px;
+	width: 360px;
 	display: flex;
 	flex-wrap: wrap;
 	padding-top: 47px;
@@ -462,10 +465,11 @@ h3.services-title {
 
 .block-phone {
 	height: 120px;
-	width: 720px;
+	width: 620px;
 	padding-top: 40px;
-	padding-left: 195px;
+	padding-left: 75px;
 	box-sizing: border-box;
+	flex-wrap: wrap;
 }
 
 .phone {	
@@ -620,8 +624,18 @@ h3.services-title {
 	line-height: 31px;
 	color: #000000;
 	text-decoration: none;
-	margin: 16px 0px;
 	display: inline-block;
+	margin-left: 20px;
+	grid-column: 1 / -1;
+}
+
+.button-hotel {
+	display: grid;
+	grid-template-columns: 133px 140px;
+	column-gap: 26px;
+	width: 300px;
+	height: 37px;
+	padding-left: 20px;
 }
 
 .button-left {
@@ -635,11 +649,9 @@ h3.services-title {
 	color: #ffffff;
 	text-decoration: none;
 	background-color: #756257;
-	padding: 9px 20px;
 	border-radius: 4px;
-	margin-right: 26px;
-	margin-bottom: 26px;
-	display: inline-block;
+	padding-top: 9px;
+
 }
 
 .button-left:hover {
@@ -659,8 +671,8 @@ h3.services-title {
 	color: #ffffff;
 	text-decoration: none;
 	background-color: #83B3D3;
-	padding: 9px 20px;
 	border-radius: 4px;
+	padding-top: 9px;
 }
 
 .button-right:hover {
@@ -680,10 +692,9 @@ h3.services-title {
 	color: #FFFFFF;
 	text-decoration: none;
 	background-color: #7DB54F;
-	padding: 9px 20px;
 	border-radius: 4px;
 	display: inline-block;
-	margin-bottom: 25px;
+	padding-top: 9px;
 }
 
 .button-right-green:hover {
@@ -703,6 +714,13 @@ h3.services-title {
 	margin-bottom: 16px;
 }
 
+.price {
+	margin-left: 20px;
+	display: grid;
+	grid-template-columns: 133px 143px;
+	column-gap:  25px;
+}
+
 .rating {
 	font-family: PT Sans,sans-serif;
 	font-style: normal;
@@ -713,11 +731,25 @@ h3.services-title {
 	color: #333333;
 	background: #F2F2F2;
 	border-radius: 4px;
-	height: 37px;
-	width: 160px;
 	text-align: center;
 	padding-top: 9px;
+	height: 28px;
 }
+
+.rating-hotel {
+	display: grid;
+	grid-template-columns: 91px 160px;
+	width: 300px;
+	column-gap: 49px;
+	padding-left: 20px;
+	padding-top: 6px;
+	vertical-align: middle;
+}
+
+.stars {
+	margin-top: 10px;
+}
+
 
 .load-more {
 	font-family: PT Sans,sans-serif;
@@ -814,7 +846,7 @@ h3.services-title {
 	margin-bottom: 46px;
 }
 
-.Feedback {
+.feedback {
 	height: 241px;
 	width: 800px;
 	margin: 0 auto;
@@ -831,6 +863,16 @@ h3.services-title {
 	align-items: center;
 	color: #000000;
 	padding-left: 22px;
+}
+
+.form-email-catalog button {
+	border-radius: 0px 10px 10px 0px;
+
+}
+
+.form-email-catalog {
+	display: grid;
+	grid-template-columns: 600px 200px;
 }
 
 .section-subtitle-catalog {
@@ -940,10 +982,29 @@ fieldset {
 }
 
 .block-hotel {
-	display: flex;
-	justify-content: space-between;
-	padding: 73px 92px 0px;
+	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: repeat(3, 340px);
+	grid-gap: 30px 18px;
+	width: 1056px;
+	padding-left: 72px;
+	padding-top: 56px;
+	padding-right: 72px;
 }
+
+.price-card {
+	display: grid;
+	row-gap: 16px;
+}
+
+.price-card a img {
+	margin-left: 20px;
+}
+
+.price-card :nth-child(4) {
+	margin-top: 10px;
+}
+
 
 .hotel-block-sections {
 	padding: 30px 92px 0px;
