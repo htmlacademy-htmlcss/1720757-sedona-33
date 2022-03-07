@@ -18,13 +18,13 @@
 					</div>
                     <ul class="navigation-list">
                         <li>
-                            <a class="navigation-link" href="index.html">Главная</a>
+                            <a class="navigation-link" href="#">Главная</a>
                         </li>
                         <li>
                             <a class="navigation-link" href="#">О Седоне</a>
                         </li>
                         <li>
-                            <a class="navigation-link" href="#">Гостиницы</a>
+                            <a class="navigation-link" href="catalog.html">Гостиницы</a>
                         </li>
                     </ul>
                     <ul class="navigation-list-navigation-user">
@@ -33,11 +33,11 @@
                                 <img src="img/icon/search.svg" alt="Поиск"  height="18" width="18">
                             </a>
                         </li>
-                        <li>
+                        <li class="number-positioning">
                             <a class="navigation-link-user" href="#">
                                 <img src="img/icon/favorite.svg" alt="Избранное"  height="18" width="18">
                             </a>
-                                <img src="img/icon/number.svg" alt="Избранное"  height="20" width="20">
+                                <img class="icon-number" src="img/icon/number.svg" alt="Избранное"  height="20" width="20">
                         </li>
                         <li>
                             <a class="header-btn-link" href="#">Хочу сюда!</a>
@@ -130,91 +130,67 @@
 				</section>
 				<section>
 					<ul class="block-hotel">
-						<li>
-							<div class="price-card">
-								<a href="#"><img src="img/img-catalog/hotels/Amara Resort & Spa.jpg" alt="Amara Resort & Spa" width="300" height="206"></a>
-								<h2><a class="link-hotel" href="" >Amara Resort & Spa</a></h2>
-								<div  class="price">
-									<p class="hotel-pric">Гостиница</p> 
-									<p class="hotel-pric"> От 4000 ₽ </p>
+						<li class="price-card">
+							<a class="img-price-card" href="#"><img src="img/img-catalog/hotels/Amara Resort & Spa.jpg" alt="Amara Resort & Spa" width="300" height="206"></a>
+							<a class="link-hotel" href="" >Amara Resort & Spa</a>
+							<p class="hotel-price">Гостиница</p> 
+							<p class="hotel-price"> От 4000 ₽ </p>
+							<a class="button-left" href="">Подробнее</a>
+							<a class="button-right" href="">В избранное</a>
+							<div class="rating-hotel">
+								<div class="stars">
+									<img  src="img/stars.svg" alt="Звезда" height="17" width="18">										
+									<img  src="img/stars.svg" alt="Звезда" height="17" width="18">
+									<img  src="img/stars.svg" alt="Звезда" height="17" width="18">								
+									<img  src="img/stars.svg" alt="Звезда" height="17" width="18">
 								</div>
-								<p class="button-hotel">
-									<a class="button-left" href="">Подробнее</a>
-									<a class="button-right" href="">В избранное</a>
-								</p>
-								<div class="rating-hotel">
-									<div class="stars">
-										<img  src="img/stars.svg" alt="Звезда" height="17" width="18">										
-										<img  src="img/stars.svg" alt="Звезда" height="17" width="18">
-										<img  src="img/stars.svg" alt="Звезда" height="17" width="18">								
-										<img  src="img/stars.svg" alt="Звезда" height="17" width="18">			
-									</div>
-									<p class="rating">Рейтинг: 8,5</p>
-								</div>
+								<p class="rating">Рейтинг: 8,5</p>
 							</div>
 						</li>
-						<li>
-							<div class="price-card">
-								<a href=""><img src="img/img-catalog/hotels/Desert Quail Inn.jpg" alt="Desert Quail Inn" height="206" width="300"></a>
-								<h2><a class="link-hotel" href="">Desert Quail Inn</a></h2>
-								<div  class="price">
-									<p class="hotel-pric">Гостиница</p> 
-									<p class="hotel-pric"> От 4000 ₽ </p>
+						<li class="price-card">
+							<a class="img-price-card" href=""><img src="img/img-catalog/hotels/Desert Quail Inn.jpg" alt="Desert Quail Inn" height="206" width="300"></a>
+							<a class="link-hotel" href="">Desert Quail Inn</a>
+							<p class="hotel-pric">Гостиница</p> 
+							<p class="hotel-pric"> От 4000 ₽ </p>
+							<a class="button-left" href="">Подробнее</a>
+							<a class="button-right" href="">В избранное</a>
+							<div class="rating-hotel">
+								<div class="stars">
+									<img src="img/stars.svg" alt="Звезда" height="17" width="18">
+									<img src="img/stars.svg" alt="Звезда" height="17" width="18">
+									<img src="img/stars.svg" alt="Звезда" height="17" width="18">
 								</div>
-								<p class="button-hotel">
-									<a class="button-left" href="">Подробнее</a>
-									<a class="button-right" href="">В избранное</a>
-								</p>
-								<div class="rating-hotel">
-									<div class="stars">
-										<img src="img/stars.svg" alt="Звезда" height="17" width="18">
-										<img src="img/stars.svg" alt="Звезда" height="17" width="18">
-										<img src="img/stars.svg" alt="Звезда" height="17" width="18">
-									</div>
-									<p class="rating">Рейтинг: 8,5</p>
-								</div>
+								<p class="rating">Рейтинг: 8,5</p>
 							</div>
 						</li>
-						<li >
-							<div class="price-card">
-								<a href=""><img src="img/img-catalog/hotels/Villas at Poco Diablo.jpg" alt="Villas at Poco Diablo" height="206" width="300"></a>
-								<h2><a class="link-hotel" href="">Villas at Poco Diablo</a></h2>
-								<div  class="price">
-									<p class="hotel-pric">Гостиница</p> 
-									<p class="hotel-pric"> От 4000 ₽ </p>
+						<li  class="price-card">
+							<a  class="img-price-card"  href=""><img src="img/img-catalog/hotels/Villas at Poco Diablo.jpg" alt="Villas at Poco Diablo" height="206" width="300"></a>
+							<a class="link-hotel" href="">Villas at Poco Diablo</a>
+							<p class="hotel-pric">Гостиница</p> 
+							<p class="hotel-pric"> От 4000 ₽ </p>
+							<a class="button-left" href="" >Подробнее</a>
+							<a class="button-right-green" href="" >В избранное</a>
+							<div class="rating-hotel">
+								<div class="stars">
+									<img src="img/stars.svg" alt="Звезда" height="17" width="18">
+									<img src="img/stars.svg" alt="Звезда" height="17" width="18">
 								</div>
-								<p class="button-hotel">
-									<a class="button-left" href="" >Подробнее</a>
-									<a class="button-right-green" href="" >В избранное</a>
-								</p>
-								<div class="rating-hotel">
-									<div class="stars">
-										<img src="img/stars.svg" alt="Звезда" height="17" width="18">
-										<img src="img/stars.svg" alt="Звезда" height="17" width="18">
-									</div>
-									<p class="rating">Рейтинг: 8,5</p>
-								</div>
-							</div>
+								<p class="rating">Рейтинг: 8,5</p>
+							</div>	
 						</li>
-						<li>
-							<div class="price-card">
-								<a href=""><img src="img/img-catalog/hotels/GreenTree Inn.jpg" alt="GreenTree Inn" height="206" width="300"></a>
-								<h2><a class="link-hotel" href="">GreenTree Inn</a></h2>
-								<div  class="price">
-									<p class="hotel-pric">Гостиница</p> 
-									<p class="hotel-pric"> От 4000 ₽ </p>
+						<li class="price-card">
+							<a class="img-price-card" href=""><img src="img/img-catalog/hotels/GreenTree Inn.jpg" alt="GreenTree Inn" height="206" width="300"></a>
+							<a class="link-hotel" href="">GreenTree Inn</a>
+							<p class="hotel-pric">Гостиница</p> 
+							<p class="hotel-pric"> От 4000 ₽ </p>
+							<a class="button-left" href="" >Подробнее</a>
+							<a class="button-right" href="" >В избранное</a>
+							<div class="rating-hotel">
+								<div class="stars">
+									<img src="img/stars.svg" alt="Звезда" height="17" width="18">
+									<img src="img/stars.svg" alt="Звезда" height="17" width="18">
 								</div>
-								<p class="button-hotel">
-									<a class="button-left" href="" >Подробнее</a>
-									<a class="button-right" href="" >В избранное</a>
-								</p>
-								<div class="rating-hotel">
-									<div class="stars">
-										<img src="img/stars.svg" alt="Звезда" height="17" width="18">
-										<img src="img/stars.svg" alt="Звезда" height="17" width="18">
-									</div>
-									<p class="rating">Рейтинг: 8,5</p>
-								</div>
+								<p class="rating">Рейтинг: 8,5</p>
 							</div>
 						</li>
 					</ul>
