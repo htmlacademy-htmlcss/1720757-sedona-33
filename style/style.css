@@ -2,14 +2,14 @@
 	font-family: "PT Sans";
 	font-style: normal;
 	font-weight: 400;
-	src: url("fonts/pt-sans-regular.woff2") format("woff2");
+	src: url("../fonts/ptsans-400.woff2") format("woff2");
 	font-display: swap;
 }
 @font-face {
 	font-family: "PT Sans";
 	font-style: normal;
 	font-weight: 400;
-	src: url("fonts/pt-sans-regular.woff2") format("woff2");
+	src: url("../fonts/ptsans-400.woff2") format("woff2");
 	font-display: swap;
 }
 
@@ -17,7 +17,7 @@
 	font-family: "PT Sans";
 	font-style: normal;
 	font-weight: 700;
-	src: url("fonts/pt-sans-bold.woff2") format("woff2");
+	src: url("../fonts/ptsans-700.woff2") format("woff2");
 	font-display: swap;
 }
 
@@ -43,6 +43,12 @@ li {
 ul {
     margin-left: 0; 
     padding-left: 0;
+}
+
+button {
+	cursor: pointer;
+	border: none;
+	display: inline-block;
 }
 
 .page {
@@ -75,15 +81,27 @@ ul {
 	display: flex;
 	height: 66px;
 	width: 647px;
-	padding-left: 40px;
+	padding-left: 47px;
 	padding-top: 20px;
 	flex-wrap: wrap;
+}
+
+.number-positioning {
+	position: relative;
+}
+
+.icon-number {
+	position: absolute;
+	top: 15px;
+	right: -14px;
+
 }
 
 .navigation-list-navigation-user {
 	display: flex;
 	height: 66px;
 	width: 343px;
+	padding-right: 20px;
 }
 
 .navigation-link {
@@ -119,7 +137,9 @@ ul {
 	color: #FFFFFF;
 	background-color: #756257;
 	text-decoration: none;
-	padding: 10px 36px;
+	margin-left: 32px;
+	width: 160px;
+	padding: 9px 0;
 	border-radius: 4px;
 	transition: all 0.3s ease 0s;
     cursor: pointer;
@@ -137,16 +157,22 @@ ul {
     background-image: url("../img/background/top-background.jpg");
     height: 485px;
     width: 1200px;
+	position: relative;
 }
 .background-divider {
-	padding-top: 20px; 
+	background-image: url("../img/background/divider.svg");
+	background-repeat: no-repeat;
+	height: 57px;
+    width: 1200px;
+	position: absolute;
+	bottom: 0;
 }
 
 .blue-background {
 	background: rgba(131, 179, 211, 0.12);
 	height: 384px;
 	width: 400px;
-	padding-top: 89px;
+	padding-top: 95px;
 	box-sizing: border-box;
 }
 
@@ -154,20 +180,17 @@ ul {
 	background-color: #FFFFFF;
 	height: 384px;
 	width: 400px;
-	padding-top: 89px;
+	padding-top: 95px;
 	box-sizing: border-box;
 }
 
-.white-background p {
-	margin: 0 auto;
-}
 
 .blue-background-central-block {
 	background: rgba(131, 179, 211, 0.2);
 	height: 384px;
 	width: 400px;
 	box-sizing: border-box;
-	padding-top: 89px;
+	padding-top: 97px;
 }
 
 .blue-background p {
@@ -181,9 +204,9 @@ ul {
 }
 
 .header-text-block {
-	height: 282px;
 	width: 1200px;
 	background-color: #FFFFFF;
+
 }
 .title {
 	font-family: PT Sans, sans-serif;
@@ -195,9 +218,21 @@ ul {
 	text-transform: uppercase;
 	text-align: center;
 	color: #000000;
-	height: 72px;
-	width: 720px;
-	padding: 63px 240px 0px;
+	margin-top: 63px;
+	margin-bottom: 29px;
+}
+
+.search-title {
+	font-family: PT Sans, sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 36px;
+	text-align: center;
+	text-transform: uppercase;
+	text-align: center;
+	color: #000000;
+	margin-bottom: 29px;
 }
 
 .subtitle {
@@ -207,10 +242,17 @@ ul {
 	font-size: 22px;
 	line-height: 36px;
 	color: #333333;
-	height: 36px;
-	width: 720px;
-	padding: 31px 240px 0px 240px;
+	text-align: center;
+	margin-bottom: 80px;
 }
+
+.services-container{
+	height: 121px;
+	width: 250px;
+	padding-top: 10px;
+	padding-left: 75px;
+}
+
 .services-title {
 	font-family: PT Sans, sans-serif;
 	font-style: normal;
@@ -220,7 +262,7 @@ ul {
 	text-align: center;
 	text-transform: uppercase;
 	color: #FFFFFF;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 
 .advantage {
@@ -266,6 +308,12 @@ ul {
     width: 1200px;
 }
 
+.background-bottom-content {
+	width: 800px;
+	height: 224px;
+	padding: 94px 200px;
+}
+
 h3.services-title {
 	font-family: PT Sans, sans-serif;
 	font-style: normal;
@@ -281,12 +329,10 @@ h3.services-title {
 	width: 1200px;
 	display: flex;
 	align-items: center;
-	margin: 0px;
 }
 
 .icon-services {
 	margin-left: 163px;
-	margin-bottom: 23px;
 }
 
 .services-group-block1 p {
@@ -330,8 +376,10 @@ h3.services-title {
 }
 
 .search-block {
-	height: 417px;
-	width: 1200px;
+	height: 228px;
+	width: 800px;
+	text-align: center;
+	padding: 90px 200px 93px;
 }
 
 .bottom-subtitle {
@@ -342,6 +390,7 @@ h3.services-title {
 	line-height: 26px;
 	text-align: center;
 	color: #333333;
+	margin-bottom: 56px;
 }
 
 .btn-link {
@@ -350,19 +399,15 @@ h3.services-title {
 	font-weight: bold;
 	font-size: 20px;
 	line-height: 36px;
-	text-align: center;
 	text-transform: uppercase;
 	color: #FFFFFF;
-	padding: 14px 150px;
 	background-color: #756257;
 	border-radius: 10px;
 	transition: all 0.3s ease 0s;
-    cursor: pointer;
 	text-decoration: none;
 	display: inline-block;
-	margin-left: 316px;
-	margin-top: 56px;
-
+	width: 575px;
+	padding: 15px 0;
 }
 
 .btn-link:hover {
@@ -378,11 +423,10 @@ h3.services-title {
 	text-align: center;
 	text-transform: uppercase;
 	color: #FFFFFF;
-	padding: 94px 240px 0px;
+	margin-bottom: 29px;
 }
 
 .form-email {
-	padding-left: 222px;
 	display: grid;
 	grid-template-columns: 600px 200px;
 }
@@ -399,9 +443,7 @@ h3.services-title {
 	line-height: 26px;
 	text-align: center;
 	color: #FFFFFF;
-	height: 52px;
-	width: 720px;
-	padding: 29px 240px 46px;
+	margin-bottom: 46px;
 }
 
 
@@ -419,7 +461,7 @@ h3.services-title {
 
 .field {
 	height: 60px;
-	border-radius: 10px;
+	border-radius: 10px 0px 0px 10px;
 	border: 0px;
 }
 
@@ -446,28 +488,24 @@ h3.services-title {
 
 .footer {
 	display:flex;
-	align-items: center;
+	padding: 46px 0 30px 72px;
 }
 
 .messenger {
 	box-sizing: border-box;
-	height: 120px;
 	width: 360px;
 	display: flex;
 	flex-wrap: wrap;
-	padding-top: 47px;
-	padding-left: 71px;
+	margin-top: 5px;
 }
 
-.messenger-icon {
-	margin-right: 30px;
+.messenger a {
+	margin-right: 25px;
 }
 
 .block-phone {
-	height: 120px;
 	width: 620px;
-	padding-top: 40px;
-	padding-left: 75px;
+	padding-left: 30px;
 	box-sizing: border-box;
 	flex-wrap: wrap;
 }
@@ -485,10 +523,8 @@ h3.services-title {
 }
 
 .block-developer {
-	height: 120px;
 	width: 240px;
-	padding-top: 38px;
-	padding-left: 53px;
+	padding-left: 40px;
 	box-sizing: border-box;
 }
 
@@ -624,18 +660,8 @@ h3.services-title {
 	line-height: 31px;
 	color: #000000;
 	text-decoration: none;
-	display: inline-block;
-	margin-left: 20px;
-	grid-column: 1 / -1;
-}
-
-.button-hotel {
-	display: grid;
-	grid-template-columns: 133px 140px;
-	column-gap: 26px;
-	width: 300px;
-	height: 37px;
-	padding-left: 20px;
+	grid-column-start: 1;
+	grid-column-end: 3;
 }
 
 .button-left {
@@ -650,8 +676,8 @@ h3.services-title {
 	text-decoration: none;
 	background-color: #756257;
 	border-radius: 4px;
-	padding-top: 9px;
-
+	width: 133px;
+	padding: 9px 0;
 }
 
 .button-left:hover {
@@ -672,7 +698,8 @@ h3.services-title {
 	text-decoration: none;
 	background-color: #83B3D3;
 	border-radius: 4px;
-	padding-top: 9px;
+	width: 140px;
+	padding: 9px 0;
 }
 
 .button-right:hover {
@@ -694,7 +721,8 @@ h3.services-title {
 	background-color: #7DB54F;
 	border-radius: 4px;
 	display: inline-block;
-	padding-top: 9px;
+	width: 140px;
+	padding: 9px 0;
 }
 
 .button-right-green:hover {
@@ -711,7 +739,6 @@ h3.services-title {
 	font-size: 18px;
 	line-height: 23px;
 	color: #333333;
-	margin-bottom: 16px;
 }
 
 .price {
@@ -719,6 +746,11 @@ h3.services-title {
 	display: grid;
 	grid-template-columns: 133px 143px;
 	column-gap:  25px;
+}
+
+.rating-hotel {
+	display: grid;
+	grid-template-columns: 140px 200px;
 }
 
 .rating {
@@ -732,24 +764,10 @@ h3.services-title {
 	background: #F2F2F2;
 	border-radius: 4px;
 	text-align: center;
-	padding-top: 9px;
-	height: 28px;
-}
+	width: 160px;
+	padding: 9px 0;
 
-.rating-hotel {
-	display: grid;
-	grid-template-columns: 91px 160px;
-	width: 300px;
-	column-gap: 49px;
-	padding-left: 20px;
-	padding-top: 6px;
-	vertical-align: middle;
 }
-
-.stars {
-	margin-top: 10px;
-}
-
 
 .load-more {
 	font-family: PT Sans,sans-serif;
@@ -982,37 +1000,29 @@ fieldset {
 }
 
 .block-hotel {
-	flex-wrap: wrap;
 	display: grid;
-	grid-template-columns: repeat(3, 340px);
-	grid-gap: 30px 18px;
-	width: 1056px;
-	padding-left: 72px;
+	grid-template-columns: 340px 340px 340px;
+	grid-template-rows: 438px;
+	justify-content: center;
 	padding-top: 56px;
-	padding-right: 72px;
+	grid-gap: 10px 18px;
 }
 
 .price-card {
+	padding-left: 20px;
 	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 206px 31px 23px 37px 37px;
 	row-gap: 16px;
 }
 
-.price-card a img {
-	margin-left: 20px;
-}
 
-.price-card :nth-child(4) {
-	margin-top: 10px;
-}
-
-
-.hotel-block-sections {
-	padding: 30px 92px 0px;
+.img-price-card{
+	grid-column-start: 1;
+	grid-column-end: 3;
 }
 
 .block-pagination {
-	height: 55px;
-	width: 1056px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
