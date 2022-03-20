@@ -25,8 +25,7 @@
                             <a class="navigation-link" href="#">О Седоне</a>
                         </li>
                         <li>
-                            <a  class="navigation-link" href="#">Гостиницы</a>
-							<div class="underline-hotel"></div>
+                            <a  class="navigation-link navigation-link-current" href="#">Гостиницы</a>
                         </li>
                     </ul>
                     <ul class="navigation-list-navigation-user">
@@ -55,15 +54,16 @@
 				<div class="background-catalog">
 					<section class="background-section">
 						<h1 class="title-catalog">Гостиницы Седоны</h1>
-						<div class="section-link-catalog">
-							<a href="index.html">
+						<ul class="section-link-catalog">
+							<li>
+								<a href="index.html">
 								<svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 									<path d="M6 0.300049L0 5.80005V12H12V5.80005L6 0.300049ZM11 11H1V6.20005L6 1.70005L11 6.20005V11Z"/>
 									<path d="M4 10H5V7.5H7V10H8V6.5H4V10Z"/>
 								</svg>
-							</a>
+							</li>
 							<a class="hapter">Гостиницы</a>
-						</div>
+						</ul>
 						<form action="https://echo.htmlacademy.ru/" method="get">
 							<div class="block-filter">
 								<div class="filter-checkbox">
@@ -101,8 +101,10 @@
 										<legend class="price-title">Стоимость, ₽:</legend>
 									</div>
 									<div class="filter">
-										<input  class="min-price"  placeholder="от" type="text">
-										<input class="max-price" placeholder="до" type="text">
+										<label class="from" for="from">от</label>
+										<input  class="min-price"  placeholder="0" type="text">
+										<label class="before" for="before">до</label>
+										<input class="max-price" placeholder="9000" type="text">
 										<ul>
 											<li>
 												<button class="button-apply" type="submit">Применить</button>
@@ -126,22 +128,23 @@
 						</select>
 					</div>
 					<div class="icon-sorting-block">
-						<a class="link-icon1" href="">
+						<a class="link-icon link-icon-current" href="">
 							<svg class="images-icon" aria-hidden="frue" focusable="false" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M4 0H0V6H4V0Z" fill="black"/>
 								<path d="M16 0H12V6H16V0Z" fill="black"/>
 								<path d="M10 0H6V6H10V0Z" fill="black"/>
-								<path d="M4 8H0V14H4V8Z" fill="black"/>										<path d="M16 8H12V14H16V8Z" fill="black"/>
+								<path d="M4 8H0V14H4V8Z" fill="black"/>										э
+								<path d="M16 8H12V14H16V8Z" fill="black"/>
 								<path d="M10 8H6V14H10V8Z" fill="black"/>
 							</svg>
 						</a>
-						<a class="link-icon" href="">
+						<a class="link-icon link-icon-current" href="">
 							<svg class="images-icon" aria-hidden="frue" focusable="false" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M16 12H0V14H16V12Z" fill="black"/>
 								<path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" fill="black"/>
 							</svg>	
 						</a>
-						<a class="link-icon" href="">
+						<a class="link-icon link-icon-current" href="">
 							<svg class="images-icon" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M4 0H0V6H4V0Z" fill="black"/>
 								<path d="M16 0H12V6H16V0Z" fill="black"/>
@@ -222,9 +225,9 @@
 						</li>
 					</ul>
 				</section>
-				<div class="border-top"></div>
-				<a class="load-more" href="#">Загрузить ещё</a>
-				<div class="border-bottom"></div>
+				<section class="dividing-line">
+					<a class="load-more" href="#">Загрузить ещё</a>
+				</section>
 				<div class="block-pagination">
 					<ul class="pagination">
 						<li>
@@ -268,26 +271,26 @@
                 <ul class="messenger">
                     <li>
                         <a href="https://twitter.com/htmlacademy_ru">
-							<svg aria-hidden="frue" focusable="false" width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path d="M11.6.2c1.8-.5 3.2.3 3.8 1.2.7-.2 1.4-.5 2.1-.7 0 .9-.6 1.5-.9 1.8.7.1 1.4-.6 1.4-.6-.2 1-1.1 1.8-1.7 2C16.1 10.7 13 15.1 5.7 15h-.5c-.4 0-4.4-.5-5.2-1.9 2.4.2 4.1-.4 5-1.2-1-.3-2.9-.4-3.2-2.9.4.1.6.2 1.3.1C1.8 8.3.4 7.5.5 5.3c.3.3 1.1.5 1.4.5C1.1 5.6-.2 2.5.9.9c1.9 1.9 4 3.6 7.6 3.8C8.7 2.3 9.7.8 11.6.2Z" fill="#83B3D3"/>
+							<svg   width="18" height="15" viewBox="0 0 18 15" fill="currentColor"  xmlns="http://www.w3.org/2000/svg">
+								<path d="M11.6.2c1.8-.5 3.2.3 3.8 1.2.7-.2 1.4-.5 2.1-.7 0 .9-.6 1.5-.9 1.8.7.1 1.4-.6 1.4-.6-.2 1-1.1 1.8-1.7 2C16.1 10.7 13 15.1 5.7 15h-.5c-.4 0-4.4-.5-5.2-1.9 2.4.2 4.1-.4 5-1.2-1-.3-2.9-.4-3.2-2.9.4.1.6.2 1.3.1C1.8 8.3.4 7.5.5 5.3c.3.3 1.1.5 1.4.5C1.1 5.6-.2 2.5.9.9c1.9 1.9 4 3.6 7.6 3.8C8.7 2.3 9.7.8 11.6.2Z"/>
 							</svg>
                         </a>
                     </li>
                     <li>
                         <a href="https://www.facebook.com/htmlacademy">
-                            <svg aria-hidden="frue" focusable="false" xmlns="http://www.w3.org/2000/svg" width="10" height="18" fill="none" viewBox="0 0 10 18">
-								<path fill="#83B3D3" d="M7 0C4.8 0 3 1.8 3 4v2H0v4h3v8h4v-8h3V6H7V4h3V0H7Z"/>
+                            <svg aria-hidden="frue" focusable="false" xmlns="http://www.w3.org/2000/svg" width="10" height="18" fill="currentColor"  viewBox="0 0 10 18">
+								<path  d="M7 0C4.8 0 3 1.8 3 4v2H0v4h3v8h4v-8h3V6H7V4h3V0H7Z"/>
 							</svg>
                         </a>
                     </li>
                     <li>
                         <a href="https://www.youtube.com/c/HTMLAcademyRUS">
-							<svg aria-hidden="frue" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="none" viewBox="0 0 20 16">
+							<svg aria-hidden="frue" focusable="false" xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor"  viewBox="0 0 20 16">
 								<g clip-path="url(#a)">
-									<path fill="#83B3D3" d="M17 0H2.9C1.2 0 0 1.5 0 3.2v9.5C0 14.5 1.2 16 2.9 16h14.3c1.5 0 2.9-1.5 2.9-3.2V3.2C19.9 1.5 18.7 0 17 0ZM7 11.8V4.2L13.7 8 7 11.8Z"/>
+									<path d="M17 0H2.9C1.2 0 0 1.5 0 3.2v9.5C0 14.5 1.2 16 2.9 16h14.3c1.5 0 2.9-1.5 2.9-3.2V3.2C19.9 1.5 18.7 0 17 0ZM7 11.8V4.2L13.7 8 7 11.8Z"/>
 								</g><defs><clipPath id="a">
-									<path fill="#fff" d="M0 0h20v16H0z"/></clipPath></defs>
-						</svg>
+								<path  d="M0 0h20v16H0z"/></clipPath></defs>
+							</svg>
                         </a>
                     </li>
                 </ul>
@@ -295,7 +298,7 @@
             		<a class="phone" href="tel:78128121212">+7 (812) 812-12-12</a>
 				</div>
 				<div class="block-developer">
-					<a href="https://htmlacademy.ru/">
+               		<a href="https://htmlacademy.ru/">
 						<svg  class="developer" width="115" height="33" viewBox="0 0 115 33" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 							<path d="M0 12.8999V15.4999H2.5V12.8999H0Z"/>
 							<path d="M11.5999 4.5C9.9999 4.5 8.7999 5.2 7.9999 6.2H7.8999V0H5.8999V15.5H7.8999V10.2C7.8999 8.1 9.1999 6.6 11.1999 6.6C12.9999 6.6 14.0999 8 14.0999 9.8V15.5H16.0999V9.4C16.1999 6.4 14.2999 4.5 11.5999 4.5Z" />
