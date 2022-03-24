@@ -214,5 +214,60 @@
 				</div>
             </footer>
         </div>
+		<div class="modal-container ">
+			<div class="modal modal-auth">
+				<button type="button" class="modal-button">
+					<svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M13 1.2L11.8 0L6.5 5.3L1.2 0L0 1.2L5.3 6.5L0 11.8L1.2 13L6.5 7.7L11.8 13L13 11.8L7.7 6.5L13 1.2Z" fill="black"/>
+					</svg>
+					<span class="visually-hidden">Закрыть</span>
+				</button>
+				<section class="modal-content">
+					<h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+					<form class="modal-filter">
+						<label class="label-date">Введите дату:</label>
+    					<input class="form-control" type="date" >
+						<p>Мы не можем отправить вас в прошлое.</p>
+						<label class="label-date" >Введите дату:</label>
+    					<input class="form-control" type="date">
+						<p>На эти даты есть свободные номера. Пока есть.</p>
+						<div class="quantity__inner">
+							<div class="quantity__inner-form"> 
+								<h4>Взрослые:</h5>     
+								<div class="form-quantity">
+    								<button class="bt-minus"></button>
+    								<input class="quantity" type="text" value="1" data-max-count="20">
+    								<button class="bt-plus"></button>
+								</div>  
+							</div>
+							<div class="quantity__inner-form"> 
+								<h4>Дети:</h5>  
+								<div class="alter">
+									<svg width="1" height="9" viewBox="0 0 1 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_18711_288)">
+										<path d="M0 9H1L1 3H0L0 9Z" fill="white"/>
+										<path d="M1 0H0V1H1V0Z" fill="white"/>
+										</g>
+										<defs>
+										<clipPath id="clip0_18711_288">
+										<rect width="1" height="9" fill="white"/>
+										</clipPath>
+										</defs>
+									</svg>	
+								</div>
+								<div class="form-quantity">
+    								<button class="bt-minus"></button>
+    								<input class="quantity" type="text" value="1" data-max-count="20">
+    								<button class="bt-plus"></button>
+								</div>  
+							</div>
+						</div>
+						<button class="search__button" type="submit">
+							Найти
+						</button>
+					</form>
+				</section>
+			</div>
+		</div>
     </body>
 </html>
